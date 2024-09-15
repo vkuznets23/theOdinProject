@@ -1,0 +1,25 @@
+#transition-container {
+  width: 100vw; /* 100% of vw = viewport width -> the width of the browser window or screen*/
+  height: 100vh;
+  display: flex;/*enables Flexbox layout for the element*/
+  flex-direction: column;/*defines main axis -> By default, Flexbox arranges items in a row (horizontally), 
+  but flex-direction: column; changes this to a vertical arrangement (stacked from top to bottom*/
+  justify-content: center;/*In this case, it will center the items vertically within the container (from top to bottom*/
+  align-items: center;/*It centers the items horizontally within the container (from left to right)*/
+  font-family: Arial, sans-serif;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  font-size: 18px;
+  padding: 16px 24px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;/*this is what we need for hover effect*/
+}
+
+button:hover {
+  transform: scale(1.2); /* Make the button 20% bigger */
+}
