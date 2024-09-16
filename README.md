@@ -1,1 +1,1 @@
-# theOdinProject_Recipes
+# theOdinCourse
