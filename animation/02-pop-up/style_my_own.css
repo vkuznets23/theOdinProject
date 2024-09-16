@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /*The CSS rule overflow: hidden applied to the body element means that any content that 
+  overflows the boundaries of the body will be hidden and won't be scrollable*/
+  body {
+    overflow: hidden;
+  }
+
+.button-container {
+    /* Size */
+    width: 100vw;
+    height: 100vh;
+    /* Font */
+    /* Background */
+    background-color: #ffffff;
+    opacity: 100%;
+    /* Border and Shape */
+    /* Alignment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Hover and Click Effects */
+}
+
+.button{
+    padding: 20px;
+    color:#ffffff; /* text color */
+    background-color: #0e79dd;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.popup-modal {
+    padding: 32px 64px; /* is the space between the content inside an element */
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    /*position on the screen*/
+    position: fixed; /*enables Flexbox layout on the elemen*/
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);/*translate(-50%, -50%) moves the element 50% of its own width to the left and 50% of its own height up. 
+    This is often used to center an element both horizontally and vertically.*/
+
+    pointer-events: none; /*This property controls how an element responds to mouse events*/
+    opacity: 0%;
+    text-align: center;
+}
+
+/* This one shows the pop-up */
+.popup-modal.show {
+    opacity: 100%;
+    pointer-events: all;
+  }
+
+.popup-modal p {
+    margin-bottom: 20px;
+}
+
+/* backdrop */
+.backdrop {
+    pointer-events: none;
+    position: fixed;
+    background: #000;
+    inset: 0; /* */
+    opacity: 0%;
+}
+
+.backdrop.show {
+    opacity: 30%;
+}
